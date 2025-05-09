@@ -346,6 +346,50 @@
 :OPERLIST=interpolation angle step
 :OPERLIST=using int distance
 :OPERLIST=interpolation distance
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
+:OPERLIST=tool retract distance
+:OPERLIST=pole angle tolerance
+:OPERLIST=auto pole angle
+:OPERLIST=pole handling
+:OPERLIST=interpolation type
+:OPERLIST=retract and rewind
+:OPERLIST=rewind angle
+:OPERLIST=multiaxis best solution
+:OPERLIST=multiaxis rotary angle
+:OPERLIST=use machine limits
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
+:OPERLIST=tool retract distance
+:OPERLIST=pole angle tolerance
+:OPERLIST=auto pole angle
+:OPERLIST=pole handling
+:OPERLIST=interpolation type
+:OPERLIST=retract and rewind
+:OPERLIST=rewind angle
+:OPERLIST=multiaxis best solution
+:OPERLIST=multiaxis rotary angle
+:OPERLIST=use machine limits
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
 :OPEREND
 *-----------------------------------
 :OPERID=MILL_SLICE_CUT
@@ -390,7 +434,8 @@
 :T:<BLANK><EOL>
 :T:(Init Tool Change)<EOL>
 :T:<N><TOOL_COMMENT><EOL>
-:T:<N><G:53><EOL>
+:T:<N>G0 G53 X0 Y0<EOL>
+
 :T:<N><G:00> Z-2 <EOL>
 
 :T:<N><G!:work_coord><EOL>
