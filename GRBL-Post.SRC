@@ -207,10 +207,6 @@
 :OPERSUB=FINE_BORING
 :OPEREND
 *-----------------------------------
-:OPERID=MILL_DRILLING
-:OPERSUB=GUN_DRILLING
-:OPEREND
-*-----------------------------------
 :OPERID=MILL_LACE
 :OPERLIST=abs inc
 :OPERLIST=work coord
@@ -241,72 +237,6 @@
 :OPERLIST=abs inc
 :OPERLIST=work coord
 :OPERLIST=coolant
-:OPERLIST=auto angle pair
-:OPERLIST=other angle pair
-:OPERLIST=angle change limit
-:OPERLIST=interpolation angle step
-:OPERLIST=using int distance
-:OPERLIST=interpolation distance
-:OPERLIST=tool retract distance
-:OPERLIST=pole angle tolerance
-:OPERLIST=auto pole angle
-:OPERLIST=pole handling
-:OPERLIST=interpolation type
-:OPERLIST=retract and rewind
-:OPERLIST=rewind angle
-:OPERLIST=multiaxis best solution
-:OPERLIST=multiaxis rotary angle
-:OPERLIST=use machine limits
-:OPERLIST=auto angle pair
-:OPERLIST=other angle pair
-:OPERLIST=angle change limit
-:OPERLIST=interpolation angle step
-:OPERLIST=using int distance
-:OPERLIST=interpolation distance
-:OPERLIST=auto angle pair
-:OPERLIST=other angle pair
-:OPERLIST=angle change limit
-:OPERLIST=interpolation angle step
-:OPERLIST=using int distance
-:OPERLIST=interpolation distance
-:OPERLIST=tool retract distance
-:OPERLIST=pole angle tolerance
-:OPERLIST=auto pole angle
-:OPERLIST=pole handling
-:OPERLIST=interpolation type
-:OPERLIST=retract and rewind
-:OPERLIST=rewind angle
-:OPERLIST=multiaxis best solution
-:OPERLIST=multiaxis rotary angle
-:OPERLIST=use machine limits
-:OPERLIST=auto angle pair
-:OPERLIST=other angle pair
-:OPERLIST=angle change limit
-:OPERLIST=interpolation angle step
-:OPERLIST=using int distance
-:OPERLIST=interpolation distance
-:OPERLIST=auto angle pair
-:OPERLIST=other angle pair
-:OPERLIST=angle change limit
-:OPERLIST=interpolation angle step
-:OPERLIST=using int distance
-:OPERLIST=interpolation distance
-:OPERLIST=tool retract distance
-:OPERLIST=pole angle tolerance
-:OPERLIST=auto pole angle
-:OPERLIST=pole handling
-:OPERLIST=interpolation type
-:OPERLIST=retract and rewind
-:OPERLIST=rewind angle
-:OPERLIST=multiaxis best solution
-:OPERLIST=multiaxis rotary angle
-:OPERLIST=use machine limits
-:OPERLIST=auto angle pair
-:OPERLIST=other angle pair
-:OPERLIST=angle change limit
-:OPERLIST=interpolation angle step
-:OPERLIST=using int distance
-:OPERLIST=interpolation distance
 :OPERLIST=auto angle pair
 :OPERLIST=other angle pair
 :OPERLIST=angle change limit
@@ -457,7 +387,6 @@
 *
 :SECTION=LAST_RAPID_Z_MOVE_UP_MILL
 :T:(Last Rapid Z Upp)<EOL>
-
 :T:<N>G0 Z25. M9<EOL>
 *
 *:SECTION=FIVE_AXIS_LAST_RAPID_Z_MOVE_UP
@@ -854,6 +783,10 @@
 :C: USING_5TH_AXIS_LOCK=NO
 :C: WORK_COORDINATE_SUPPORT=NO
 :C: WORK_AND_SUB_SUPPORT=NO
+:C: USING_HAAS_G10_L13=NO
+:C: USING_WORLD_COORDINATES=NO
+:C: SUPPORTING_CL_COOLANT=1
+:C: MAX_ARC_RADIUS=9999
 :C: USING_HAAS_G10_L13=NO
 :C: USING_WORLD_COORDINATES=NO
 :C: SUPPORTING_CL_COOLANT=1
