@@ -124,7 +124,7 @@
 :ATTREND
 *-----------------------------------
 :LIBRARY=.\GRBL-Post.LIB
-:LIBRARY=..\..\..\..\CAMWorksData\UPG-2\MasterLibraryFiles\MILL.LIB
+:LIBRARY=C:\CAMWorksData\UPG-2\MasterLibraryFiles\MILL.LIB
 *-----------------------------------
 :ATTRNAME=setup
 :ATTRTYPE=LIST
@@ -207,10 +207,6 @@
 :OPERSUB=FINE_BORING
 :OPEREND
 *-----------------------------------
-:OPERID=MILL_DRILLING
-:OPERSUB=GUN_DRILLING
-:OPEREND
-*-----------------------------------
 :OPERID=MILL_LACE
 :OPERLIST=abs inc
 :OPERLIST=work coord
@@ -241,6 +237,50 @@
 :OPERLIST=abs inc
 :OPERLIST=work coord
 :OPERLIST=coolant
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
+:OPERLIST=tool retract distance
+:OPERLIST=pole angle tolerance
+:OPERLIST=auto pole angle
+:OPERLIST=pole handling
+:OPERLIST=interpolation type
+:OPERLIST=retract and rewind
+:OPERLIST=rewind angle
+:OPERLIST=multiaxis best solution
+:OPERLIST=multiaxis rotary angle
+:OPERLIST=use machine limits
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
+:OPERLIST=tool retract distance
+:OPERLIST=pole angle tolerance
+:OPERLIST=auto pole angle
+:OPERLIST=pole handling
+:OPERLIST=interpolation type
+:OPERLIST=retract and rewind
+:OPERLIST=rewind angle
+:OPERLIST=multiaxis best solution
+:OPERLIST=multiaxis rotary angle
+:OPERLIST=use machine limits
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
 :OPERLIST=auto angle pair
 :OPERLIST=other angle pair
 :OPERLIST=angle change limit
@@ -431,8 +471,7 @@
 *
 :SECTION=LINE_MOVE_MILL
 :T:(Line Move)<EOL>
-
-:T:<N><G:ABSINC><G:94><G:01><X!><Y!><Z!><F><EOL>
+:T:<N>G1<X!><Y!><Z!><F><EOL>
 *
 *:SECTION=FASTLINE
 *
@@ -656,7 +695,7 @@
 :T:<N><OPR_COMMENT><EOL>
 *
 :SECTION=CHANGE_MILL_SPEED
-:T:(Chnage Mill Speed)<EOL>
+:T:(Change Mill Speed)<EOL>
 :T:IF OPR_SPEED=0 THEN <N><M:05><EOL>ENDIF
 :T:IF OPR_SPEED>0 THEN <N><S><M:SPINDLE_DIR><EOL>ENDIF
 *
@@ -766,6 +805,18 @@
 :C: USING_5TH_AXIS_LOCK=NO
 :C: WORK_COORDINATE_SUPPORT=NO
 :C: WORK_AND_SUB_SUPPORT=NO
+:C: USING_HAAS_G10_L13=NO
+:C: USING_WORLD_COORDINATES=NO
+:C: SUPPORTING_CL_COOLANT=1
+:C: MAX_ARC_RADIUS=9999
+:C: USING_HAAS_G10_L13=NO
+:C: USING_WORLD_COORDINATES=NO
+:C: SUPPORTING_CL_COOLANT=1
+:C: MAX_ARC_RADIUS=9999
+:C: USING_HAAS_G10_L13=NO
+:C: USING_WORLD_COORDINATES=NO
+:C: SUPPORTING_CL_COOLANT=1
+:C: MAX_ARC_RADIUS=9999
 :C: USING_HAAS_G10_L13=NO
 :C: USING_WORLD_COORDINATES=NO
 :C: SUPPORTING_CL_COOLANT=1

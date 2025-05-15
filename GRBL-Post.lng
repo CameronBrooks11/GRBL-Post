@@ -55,18 +55,18 @@ Operation Number                                                      :0054:
 ENTER Operation Number                                                :0055:
 Date                                                                  :0056:
 ENTER Date                                                            :0057:
-Absolute Incremental                                                  :0058:
-SELECT Absolute Incremental                                           :0059:
-Absolute                                                              :0060:
-Incremental                                                           :0061:
-Work Coordinate 54 - 59                                               :0062:
-ENTER Work Coordinate 54 - 59                                         :0063:
-Coolant                                                               :0064:
-SELECT Coolant                                                        :0065:
-Off                                                                   :0066:
-Flood                                                                 :0067:
-Mist                                                                  :0068:
-Through Hole                                                          :0069:
+Coolant                                                               :0058:
+SELECT Coolant                                                        :0059:
+Off                                                                   :0060:
+Flood                                                                 :0061:
+Mist                                                                  :0062:
+Through Hole                                                          :0063:
+Absolute Incremental                                                  :0064:
+SELECT Absolute Incremental                                           :0065:
+Absolute                                                              :0066:
+Incremental                                                           :0067:
+Work Coordinate 54 - 59                                               :0068:
+ENTER Work Coordinate 54 - 59                                         :0069:
 Compensation                                                          :0070:
 SELECT Compensation                                                   :0071:
 On                                                                    :0072:
