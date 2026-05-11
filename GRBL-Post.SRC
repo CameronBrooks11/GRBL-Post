@@ -160,7 +160,6 @@
 *-----------------------------------
 :OPERID=MILL_DRILLING
 :OPERSUB=SPOT_DRILLING
-:OPERLIST=coolant
 :OPEREND
 *-----------------------------------
 :OPERID=MILL_DRILLING
@@ -210,13 +209,11 @@
 :OPERID=MILL_LACE
 :OPERLIST=abs inc
 :OPERLIST=work coord
-:OPERLIST=coolant
 :OPEREND
 *-----------------------------------
 :OPERID=MILL_POCKET
 :OPERLIST=abs inc
 :OPERLIST=work coord
-:OPERLIST=coolant
 :OPEREND
 *-----------------------------------
 :OPERID=MILL_PROFILING
@@ -224,41 +221,17 @@
 :OPERLIST=display tool offset
 :OPERLIST=abs inc
 :OPERLIST=work coord
-:OPERLIST=coolant
 :OPEREND
 *-----------------------------------
 :OPERID=MILL_MISC
 :OPERLIST=abs inc
 :OPERLIST=work coord
-:OPERLIST=coolant
 :OPEREND
 *-----------------------------------
 :OPERID=MILL_UV_CUT
 :OPERLIST=abs inc
 :OPERLIST=work coord
 :OPERLIST=coolant
-:OPERLIST=auto angle pair
-:OPERLIST=other angle pair
-:OPERLIST=angle change limit
-:OPERLIST=interpolation angle step
-:OPERLIST=using int distance
-:OPERLIST=interpolation distance
-:OPERLIST=tool retract distance
-:OPERLIST=pole angle tolerance
-:OPERLIST=auto pole angle
-:OPERLIST=pole handling
-:OPERLIST=interpolation type
-:OPERLIST=retract and rewind
-:OPERLIST=rewind angle
-:OPERLIST=multiaxis best solution
-:OPERLIST=multiaxis rotary angle
-:OPERLIST=use machine limits
-:OPERLIST=auto angle pair
-:OPERLIST=other angle pair
-:OPERLIST=angle change limit
-:OPERLIST=interpolation angle step
-:OPERLIST=using int distance
-:OPERLIST=interpolation distance
 :OPERLIST=auto angle pair
 :OPERLIST=other angle pair
 :OPERLIST=angle change limit
@@ -471,7 +444,7 @@
 *
 :SECTION=LINE_MOVE_MILL
 :T:(Line Move)<EOL>
-:T:<N>G1<X!><Y!><Z!><F><EOL>
+:T:<N><G:ABSINC><G:94><G:01><X!><Y!><Z!><F><EOL>
 *
 *:SECTION=FASTLINE
 *
@@ -695,16 +668,14 @@
 :T:<N><OPR_COMMENT><EOL>
 *
 :SECTION=CHANGE_MILL_SPEED
-:T:(Change Mill Speed)<EOL>
-:T:IF OPR_SPEED=0 THEN <N><M:05><EOL>ENDIF
-:T:IF OPR_SPEED>0 THEN <N><S><M:SPINDLE_DIR><EOL>ENDIF
+:T:(Change Mill Speed DISABLED)<EOL>
 *
 :SECTION=OUTPUT_DWELL
 :T:(Output Dwell)<EOL>
 :T:IF CW_DWELL>0 THEN <N><G:04> X<#:CW_DWELL><EOL>ENDIF
 *
 :SECTION=OUTPUT_COOLANT
-:T:<N>(Coolant command suppressed)<EOL>
+:T:(Output Coolant Suppressed)<EOL>
 *
 :SECTION=OPTIONAL_STOP
 :T:(Optional Stop)<EOL>
@@ -805,6 +776,14 @@
 :C: USING_5TH_AXIS_LOCK=NO
 :C: WORK_COORDINATE_SUPPORT=NO
 :C: WORK_AND_SUB_SUPPORT=NO
+:C: USING_HAAS_G10_L13=NO
+:C: USING_WORLD_COORDINATES=NO
+:C: SUPPORTING_CL_COOLANT=1
+:C: MAX_ARC_RADIUS=9999
+:C: USING_HAAS_G10_L13=NO
+:C: USING_WORLD_COORDINATES=NO
+:C: SUPPORTING_CL_COOLANT=1
+:C: MAX_ARC_RADIUS=9999
 :C: USING_HAAS_G10_L13=NO
 :C: USING_WORLD_COORDINATES=NO
 :C: SUPPORTING_CL_COOLANT=1
