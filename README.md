@@ -1,4 +1,10 @@
 # GRBL-Post
+
+> **Archived.** This fork is replaced by
+> [solidworks-cam-grbl-post](https://github.com/CameronBrooks11/solidworks-cam-grbl-post),
+> a post for Grbl 1.1 and grblHAL with a checker for posted G-code. Do not use the post
+> here: its tool changes and end of job run `G0 Z-2` in work coordinates, 2 mm below the
+> work zero, and the `GRBL-Post.ctl` here predates the May 2025 fixes in its source.
 A post processor for CAMWorks / SolidWorks CAM for GRBL (https://github.com/grbl/grbl)
 
 This is developed using Universal Post Generator (UPG-2) utility available from 
